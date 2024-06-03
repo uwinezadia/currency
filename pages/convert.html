@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/convert.css">
+</head>
+<body>
+    <div class="diane">
+        
+    </div>
+    <div class="eric">
+        <center>
+            <h2>XYZ-COMPANY</h2>
+            <h3>CURRENCY EXCHANGE PLATFORM</h3>
+        </center>
+    </div>
+    <div class="div">
+        <label>Amount</label><br>
+        <div style="width: 30px;">
+            <input type="number" id="amountInput">
+        </div>
+        <div style="margin-top: -35px;margin-left: 200px;">
+            <label>From</label>
+        </div>
+        <div class="select">
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="FRW">FRW</option>
+            </select>
+        </div>
+        <div style="margin-top: -35px;margin-left: 300px;">
+            <label>To</label>
+        </div>
+        <div class="select2">
+            <select id="toCurrency">
+                <option value="RWF">RWF</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+        <div class="p">
+            <p>Result: <span id="result"></span></p>
+        </div>
+        <button onclick="convertCurrency()">Convert</button>
+    </div>
+
+    <script>
+        function convertCurrency() {
+            var amount = parseFloat(document.getElementById("amountInput").value);
+            var fromCurrency = document.getElementById("fromCurrency").value;
+            var toCurrency = document.getElementById("toCurrency").value;
+
+            // Perform currency conversion (you need to implement this part)
+            var result = convert(amount, fromCurrency, toCurrency);
+
+            // Display the result
+            document.getElementById("result").innerText = result;
+        }
+
+        function convert(amount, fromCurrency, toCurrency) {
+            // This is a placeholder function, you should implement the actual currency conversion logic here
+            // For simplicity, let's assume 1 USD = 1000 RWF
+            if (fromCurrency === "USD" && toCurrency === "RWF") {
+                return amount * 1000;
+            } else if (fromCurrency === "RWF" && toCurrency === "USD") {
+                return amount / 1000;
+            } else {
+                return "Unsupported conversion";
+            }
+        }
+    </script>
+</body>
+</html>

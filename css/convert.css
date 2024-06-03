@@ -1,0 +1,60 @@
+.eric{
+    color: whitesmoke;
+    background-color: rgb(91, 91, 193);
+    height: 150px;
+    width: 500px;
+    margin-left: 203px;
+    margin-bottom: -20px;
+    margin-top: 60px;
+}
+.div{
+    background-color: white;
+    border: 2px;
+    height: 150px;
+    width: 440px;
+    margin-top: -30px;
+    margin-left: 230px;
+    border: 1px black solid;
+}
+button{
+    margin-left: 30px;
+    border-radius: 6px;
+    background-color: rgb(91, 91, 193);
+    color: white;
+    margin-bottom: -30px;
+}
+.diane{
+    border: 3px;
+    height: 330px;
+    width: 500px;
+    background-color:whitesmoke;
+    margin-bottom: -392px;
+    margin-left: 202px;
+    border: 0.3px black solid;
+}
+.select{
+  margin-left: 200px; 
+  
+}
+.select2{
+    margin-left: 300px;
+}
+.p{
+    margin-top: 15px;
+    margin-left: 300px;
+}
+body{
+    background-color: gray;
+}
+#result{
+margin-top: -15px;
+}
+
+
+
+
+
+
+
+
+
